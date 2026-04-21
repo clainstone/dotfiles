@@ -36,6 +36,13 @@ alias nvim='vim'
 alias vi='vim'
 alias dotgit='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
+if [[ "$(uname)" == "Darwin" ]]; then
+  export OMP_PREFIX="$(brew --prefix oh-my-posh)"
+elif [[ "$(uname)" == "Linux" ]]; then
+    # Sei su Linux
+    export OMP_PREFIX="${HOME}/.cache/oh-my-posh"
+fi
+
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 if command -v oh-my-posh > /dev/null; then
  eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/zash.omp.json)" # <-- CAMBIA QUESTO PERCORSO AL TUO TEMA!
