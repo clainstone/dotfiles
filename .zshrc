@@ -45,7 +45,7 @@ fi
 
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 if command -v oh-my-posh > /dev/null; then
- eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/zash.omp.json)" # <-- CAMBIA QUESTO PERCORSO AL TUO TEMA!
+ eval "$(oh-my-posh init zsh --config $OMP_PREFIX/themes/zash.omp.json)" # <-- CAMBIA QUESTO PERCORSO AL TUO TEMA!
 fi
 
 export EDITOR="$(command -v nvim || command -v vim || echo 'vi')"
@@ -53,3 +53,4 @@ export VISUAL="$EDITOR"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export TIMEFMT=$'\nreal %E\nuser %U\nsys  %S'
+setopt EXTENDED_GLOB
