@@ -53,4 +53,5 @@ export VISUAL="$EDITOR"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export TIMEFMT=$'\nreal %E\nuser %U\nsys  %S'
+export TERM="xterm-256color"
 setopt EXTENDED_GLOB
