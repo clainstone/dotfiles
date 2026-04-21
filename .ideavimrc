@@ -5,7 +5,6 @@ noremap w G
 vnoremap w G
 noremap n o
 noremap c diw
-noremap f /
 noremap e 10h
 noremap r 10l
 vnoremap e 10h
@@ -14,13 +13,12 @@ vnoremap y "+y
 vnoremap p "+p
 noremap <S-Up> gk8
 noremap <S-Down> gj8
-inoremap <S-Up> <ESC>gk8
-inoremap <S-Down> <ESC>gj8
 vnoremap <S-Up> gk8
 vnoremap <S-Down> gj8
 nnoremap z a
 vnoremap z i
-nnoremap <Space> G
 nnoremap c i//
+nnoremap <Space> G
+xnoremap <Space> G
 
 
