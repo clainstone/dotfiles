@@ -44,8 +44,12 @@ Plug 'vim-airline/vim-airline-themes'
 " Icone per i file (richiede un Nerd Font)
 Plug 'ryanoasis/vim-devicons'
 
-call plug#end()
+" Sexy scroller
 
+
+
+call plug#end()
+Plug 'joeytwiddle/sexy_scroller.vim'
 
 
 " ==============================================================================
@@ -54,6 +58,7 @@ call plug#end()
 syntax on
 set encoding=utf-8
 set ttyfast
+set nowrap
 
 " Aspetto
 set number              " Mostra il numero della riga corrente
