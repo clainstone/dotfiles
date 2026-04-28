@@ -55,3 +55,13 @@ export PATH="$HOME/.local/bin:$PATH"
 export TIMEFMT=$'\nreal %E\nuser %U\nsys  %S'
 export TERM="xterm-256color"
 setopt EXTENDED_GLOB
+
+# --- CUSTOM FUNCTIONS ---
+
+#fuzzy find
+f(){
+  if (( $# == 0 )); 
+  then find / * -type f | fzf;
+  else find $1 * -type f | fzf;
+  fi;
+}
