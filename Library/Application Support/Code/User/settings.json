@@ -1,0 +1,61 @@
+{
+    "workbench.startupEditor": "none",
+    //======FONT CONFIG=====
+    "editor.fontWeight": "400",
+    "editor.lineHeight": 18,
+    "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "editor.fontLigatures": false,
+    "editor.fontSize": 13.5,
+    "terminal.integrated.fontWeight": "400",
+    "terminal.integrated.lineHeight": 1,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "terminal.integrated.fontSize": 13.5,
+    "terminal.integrated.gpuAcceleration": "on",
+    //======ZEN MODE=====
+    "editor.minimap.enabled": false,
+    "zenMode.fullScreen": false, // Disabilita lo schermo intero
+    "zenMode.hideStatusBar": true, // Nasconde la barra blu in basso
+    "zenMode.hideLineNumbers": false, // Mantieni i numeri se ti servono per le Vim motions
+    "zenMode.centerLayout": false, // Centra il codice al centro dello schermo (fondamentale!)
+    "zenMode.restore": true, // Riapre in Zen Mode se hai chiuso così
+    "zenMode.showTabs": "none",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.colorCustomizations": {
+        "editorGroup.border": "#00000000",
+        "editorCenteredLayout.background": "#1a1b26", // Metti qui il colore del tuo tema
+        "editorLineNumber.foreground": "#5c6773", // Colore numeri normali
+        "editorLineNumber.activeForeground": "#ffcc66", // Colore della riga corrente (stile Ayu)
+    },
+    //=======VIM CONFIGURATION=======
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "~/.ideavimrc",
+    "vim.useSystemClipboard": true,
+    "vim.hlsearch": true,
+    "keyboard.dispatch": "keyCode",
+    "workbench.colorTheme": "Vim Dark Medium",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "workbench.editor.empty.hint": "hidden",
+    "terminal.integrated.initialHint": false,
+    //========AUTOSAVE=========
+    //"files.autoSave": "afterDelay",
+    //"files.autoSaveDelay": 200,
+    //====== PYTHON & INLAY HINTS CONFIG =====
+    "editor.inlayHints.enabled": "on",
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.callArgumentNames": "all",
+    //====== MLIR-AIE PATHS (IntelliSense) =====
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/python",
+        "${workspaceFolder}/build/python"
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "cmake.showConfigureWithDebuggerNotification": false,
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff", // Oppure "ms-python.black-formatter"
+        "editor.formatOnSave": true
+    },
+}

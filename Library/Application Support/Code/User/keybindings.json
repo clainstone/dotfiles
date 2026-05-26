@@ -1,0 +1,149 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "cmd+shift+g",
+        "command": "cmake.configure"
+    },
+    {
+        "key": "cmd+b",
+        "command": "cmake.build"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.toggleZenMode",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+up",
+        "command": "vim.remap",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'",
+        "args": {
+            "after": [
+                "8",
+                "g",
+                "k"
+            ]
+        }
+    },
+    {
+        "key": "shift+down",
+        "command": "vim.remap",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Normal'",
+        "args": {
+            "after": [
+                "8",
+                "g",
+                "j"
+            ]
+        }
+    },
+    {
+        "key": "shift+up",
+        "command": "vim.remap",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Visual'",
+        "args": {
+            "after": [
+                "8",
+                "g",
+                "k"
+            ]
+        }
+    },
+    {
+        "key": "shift+down",
+        "command": "vim.remap",
+        "when": "editorTextFocus && vim.active && vim.mode == 'Visual'",
+        "args": {
+            "after": [
+                "8",
+                "g",
+                "j"
+            ]
+        }
+    },
+    {
+        "key": "cmd+shift+g",
+        "command": "cmake.configure"
+    },
+    {
+        "key": "cmd+b",
+        "command": "cmake.build"
+    },
+    {
+        "key": "alt+z",
+        "command": "workbench.action.toggleZenMode",
+        "when": "editorTextFocus"
+    },
+    // 1. SPLIT ORIZZONTALE (Cmd + Enter)
+    {
+        "key": "cmd+enter",
+        "command": "workbench.action.splitEditorRight"
+    },
+    // 2. NAVIGAZIONE TRA FINESTRE SPLITTATE (Cmd + Left/Right)
+    // Simile a tmux, si muove tra i gruppi di editor
+    {
+        "key": "cmd+left",
+        "command": "workbench.action.focusPreviousGroup"
+    },
+    {
+        "key": "cmd+right",
+        "command": "workbench.action.focusNextGroup"
+    },
+    // 3. NAVIGAZIONE TRA TAB (Option + Left/Right)
+    {
+        "key": "alt+left",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.nextEditor"
+    },
+    // 4. APRIRE IL FILE MANAGER / SIDEBAR (Command + 1)
+    // Prima disabilitiamo l'azione predefinita (Focus 1st Tab)
+    {
+        "key": "alt+1",
+        "command": "workbench.view.explorer",
+        "when": "!sideBarFocus"
+    },
+    {
+        "key": "alt+1",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "sideBarFocus"
+    },
+    {
+        "key": "alt+1",
+        "command": "-workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "alt+a",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "enter",
+        "command": "list.select",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-list.edit",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "list.edit",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "cmd+q",
+        "command": "-workbench.action.quit"
+    },
+    {
+        "key": "alt+cmd+l",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly"
+    }
+]

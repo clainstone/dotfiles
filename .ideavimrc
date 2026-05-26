@@ -1,6 +1,4 @@
 "key mappings
-noremap q 1G
-vnoremap q 1G
 noremap w G
 vnoremap w G
 noremap n o
@@ -20,5 +18,6 @@ vnoremap z i
 nnoremap c i//
 nnoremap <Space> G
 xnoremap <Space> G
+nnoremap C C<Esc>
 
 
