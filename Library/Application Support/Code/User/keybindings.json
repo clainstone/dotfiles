@@ -1,19 +1,6 @@
 // Place your key bindings in this file to override the defaults
 [
     {
-        "key": "cmd+shift+g",
-        "command": "cmake.configure"
-    },
-    {
-        "key": "cmd+b",
-        "command": "cmake.build"
-    },
-    {
-        "key": "cmd+k",
-        "command": "workbench.action.toggleZenMode",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "shift+up",
         "command": "vim.remap",
         "when": "editorTextFocus && vim.active && vim.mode == 'Normal'",
@@ -60,14 +47,6 @@
                 "j"
             ]
         }
-    },
-    {
-        "key": "cmd+shift+g",
-        "command": "cmake.configure"
-    },
-    {
-        "key": "cmd+b",
-        "command": "cmake.build"
     },
     {
         "key": "alt+z",
@@ -76,19 +55,11 @@
     },
     // 1. SPLIT ORIZZONTALE (Cmd + Enter)
     {
-        "key": "cmd+enter",
+        "key": "alt+enter",
         "command": "workbench.action.splitEditorRight"
     },
     // 2. NAVIGAZIONE TRA FINESTRE SPLITTATE (Cmd + Left/Right)
     // Simile a tmux, si muove tra i gruppi di editor
-    {
-        "key": "cmd+left",
-        "command": "workbench.action.focusPreviousGroup"
-    },
-    {
-        "key": "cmd+right",
-        "command": "workbench.action.focusNextGroup"
-    },
     // 3. NAVIGAZIONE TRA TAB (Option + Left/Right)
     {
         "key": "alt+left",
@@ -133,12 +104,7 @@
         "when": "listFocus && !inputFocus"
     },
     {
-        "key": "cmd+enter",
-        "command": "list.edit",
-        "when": "listFocus && !inputFocus"
-    },
-    {
-        "key": "cmd+q",
+        "key": "alt+q",
         "command": "-workbench.action.quit"
     },
     {
