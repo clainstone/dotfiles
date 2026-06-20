@@ -1,3 +1,4 @@
+
 {
     "workbench.startupEditor": "none",
     //======FONT CONFIG=====
@@ -32,30 +33,50 @@
     "vim.useSystemClipboard": true,
     "vim.hlsearch": true,
     "keyboard.dispatch": "keyCode",
-    "workbench.colorTheme": "Vim Dark Medium",
-    "editor.formatOnSave": true,
     "editor.tabSize": 4,
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
     "workbench.editor.empty.hint": "hidden",
     "terminal.integrated.initialHint": false,
     //========AUTOSAVE=========
-    //"files.autoSave": "afterDelay",
-    //"files.autoSaveDelay": 200,
+    "files.autoSave": "afterDelay",
     //====== PYTHON & INLAY HINTS CONFIG =====
-    "editor.inlayHints.enabled": "on",
     "python.analysis.inlayHints.variableTypes": true,
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.inlayHints.callArgumentNames": "all",
-    //====== MLIR-AIE PATHS (IntelliSense) =====
-    "python.analysis.extraPaths": [
-        "${workspaceFolder}/python",
-        "${workspaceFolder}/build/python"
-    ],
-    "python.analysis.typeCheckingMode": "basic",
-    "cmake.showConfigureWithDebuggerNotification": false,
-    "[python]": {
-        "editor.defaultFormatter": "charliermarsh.ruff", // Oppure "ms-python.black-formatter"
-        "editor.formatOnSave": true
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "vim.handleKeys": {
+        "<C-f>": false,
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-a>": false,
+        "<C-z>": false,
+        "<C-h>": false,
     },
+    
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.nextEditSuggestions.eagerness": "medium",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+
+    //====== OTTIMIZZAZIONI PRESTAZIONI E VELOCITÀ INTELLISENSE =====
+    "editor.suggestDelay": 0, // Rimuove il ritardo della comparsa del menu
+    "editor.quickSuggestionsDelay": 0, // Calcolo istantaneo dei suggerimenti mentre digiti
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false, // Non spreca CPU nei commenti
+        "strings": false   // Non spreca CPU nelle stringhe di testo
+    },
+    "editor.formatOnType": false, // Disattivato: formattare ad ogni singola lettera bloccava l'input su Linux tunnel
+    "editor.inlayHints.enabled": "offUnlessPressed", // Mostra i tipi solo se premi Ctrl+Alt (non rallenta la digitazione)
+    "python.analysis.typeCheckingMode": "basic", // Pylance non esegue più il controllo continuo dei tipi in background
+    "python.analysis.diagnosticMode": "workspace", // Analizza solo il file aperto, ignora il resto del sistema
+    "C_Cpp.workspaceParsingPriority": "low", // Impedisce al server C++ di rubare core della CPU durante la digitazione
+    "C_Cpp.enhancedColorization": false,
+    "claudeCode.preferredLocation": "panel",
+    "terminal.integrated.enableMultiLinePasteWarning": "never" // Velocizza il rendering grafico dei suggerimenti C++
 }
