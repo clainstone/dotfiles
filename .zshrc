@@ -35,6 +35,9 @@ alias rm='rm -i'
 alias nvim='vim'
 alias vi='vim'
 alias dotgit='git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias codex='codex --yolo'
+alias devtunnelamd='devtunnel connect swift-hill-t97pdsk.uks1'
+alias connectamd='ssh -R 443:api.openai.com:443 amd'
 
 if [[ "$(uname)" == "Darwin" ]]; then
   export OMP_PREFIX="$(brew --prefix oh-my-posh)"
@@ -65,3 +68,4 @@ f(){
   else find $1 * -type f | fzf;
   fi;
 }
+export PATH=/Users/clainstone/.local/bin:/usr/local/opt/llvm/bin:/Users/clainstone/.local/share/zinit/polaris/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/opt/homebrew/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/clainstone/bin
