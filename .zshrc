@@ -29,7 +29,7 @@ setopt hist_find_no_dups           # Non mostrare duplicati quando si cerca nell
 
 # --- ALIASES ---
 # Alias comuni per macOS
-alias ls="ls -lG"
+alias ls="ls -l --color=auto"
 alias py="python3"
 alias rm='rm -i'
 alias nvim='vim'
